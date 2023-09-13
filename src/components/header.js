@@ -35,7 +35,7 @@ export default function Header() {
     );
   };
   return (
-    <div className="flex flex-row-reverse justify-between items-center w-full h-16 bg-twitter-blue px-10">
+    <div className="flex flex-row-reverse justify-between items-center w-full h-16 bg-twitter-blue px-10 mb-3">
       <Link className="text-2xl font-bold text-white font-vazir" href="/">
         توییترفا
       </Link>

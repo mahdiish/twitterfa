@@ -6,8 +6,8 @@ export default function TopicTemplate({ topic }) {
   const renderedContents = topic.contents.map((content) => {
     return (
       <Link href="/" className="block text-right py-1 px-2 odd:bg-gray-100">
-        <div className="flex justify-between">
-          <FaHotjar className="text-twitter-blue" />
+        <div className="flex justify-between items-center">
+          <FaHotjar className="text-twitter-blue text-base" />
           <p className="font-vazir text-sm">{content}</p>
         </div>
       </Link>
