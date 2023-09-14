@@ -12,8 +12,8 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-full	gap-8">
+    <main className="flex min-h-screen flex-col items-center justify-between p-8 sm:p-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8">
         {renderedTopics}
       </div>
     </main>

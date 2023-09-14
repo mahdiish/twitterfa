@@ -5,10 +5,17 @@ import { FaHotjar } from "react-icons/fa";
 export default function TopicTemplate({ topic }) {
   const renderedContents = topic.contents.map((content) => {
     return (
-      <Link href="/" className="block text-right py-1 px-2 odd:bg-gray-100">
+      <Link
+        href={`${content.topic}/${content.id}`}
+        className="block text-right py-1 px-2 odd:bg-gray-100 border-solid border-r-2 odd:border-twitter-blue even:border-gray-100"
+      >
         <div className="flex justify-between items-center">
+          {/* <div className="flex justify-between items-center w-3/12"> */}
           <FaHotjar className="text-twitter-blue text-base" />
-          <p className="font-vazir text-sm">{content}</p>
+          {/* <p className="font-vazir text-xs">{content.author}</p>
+          </div> */}
+
+          <p className="font-vazir text-sm w-11/12">{content.title}</p>
         </div>
       </Link>
     );
@@ -22,7 +29,7 @@ export default function TopicTemplate({ topic }) {
         className="w-full h-60"
       />
       <h1 className="text-right font-vazir p-1">
-        <Link href="/">{topic.title}</Link>
+        <Link href={topic.href}>{topic.title}</Link>
       </h1>
       {renderedContents}
     </div>

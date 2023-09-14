@@ -11,66 +11,91 @@ import { getSortedPostsData } from "../../lib/posts";
 //
 const allSocialPostsData = getSortedPostsData("posts/social");
 let socialContents = [];
-let socialAuthors = [];
 for (let i = 0; i < 5; i++) {
-  socialContents[i] = allSocialPostsData[i].title;
-  socialAuthors[i] = allSocialPostsData[i].author;
+  socialContents.push({
+    title: allSocialPostsData[i].title,
+    author: allSocialPostsData[i].author,
+    id: allSocialPostsData[i].id,
+    topic: allSocialPostsData[i].topic,
+  });
 }
 //
 const allPoliticPostsData = getSortedPostsData("posts/politic");
 let politicContents = [];
-let politicAuthors = [];
 for (let i = 0; i < 5; i++) {
-  politicContents[i] = allPoliticPostsData[i].title;
-  politicAuthors[i] = allPoliticPostsData[i].author;
+  politicContents.push({
+    title: allPoliticPostsData[i].title,
+    author: allPoliticPostsData[i].author,
+    id: allPoliticPostsData[i].id,
+    topic: allPoliticPostsData[i].topic,
+  });
 }
 //
 const allMilitaryPostsData = getSortedPostsData("posts/military");
 let militaryContents = [];
-let militaryAuthors = [];
 for (let i = 0; i < 5; i++) {
-  militaryContents[i] = allMilitaryPostsData[i].title;
-  militaryAuthors[i] = allMilitaryPostsData[i].author;
+  militaryContents.push({
+    title: allMilitaryPostsData[i].title,
+    author: allMilitaryPostsData[i].author,
+    id: allMilitaryPostsData[i].id,
+    topic: allMilitaryPostsData[i].topic,
+  });
 }
 //
 const allSportPostsData = getSortedPostsData("posts/sport");
 let sportContents = [];
-let sportAuthors = [];
 for (let i = 0; i < 5; i++) {
-  sportContents[i] = allSportPostsData[i].title;
-  sportAuthors[i] = allSportPostsData[i].author;
+  sportContents.push({
+    title: allSportPostsData[i].title,
+    author: allSportPostsData[i].author,
+    id: allSportPostsData[i].id,
+    topic: allSportPostsData[i].topic,
+  });
 }
 //
 const allEconomicPostsData = getSortedPostsData("posts/economic");
 let economicContents = [];
-let economicAuthors = [];
 for (let i = 0; i < 5; i++) {
-  economicContents[i] = allEconomicPostsData[i].title;
-  economicAuthors[i] = allEconomicPostsData[i].author;
+  economicContents.push({
+    title: allEconomicPostsData[i].title,
+    author: allEconomicPostsData[i].author,
+    id: allEconomicPostsData[i].id,
+    topic: allEconomicPostsData[i].topic,
+  });
 }
 //
 const allTechnologyPostsData = getSortedPostsData("posts/technology");
 let technologyContents = [];
-let technologyAuthors = [];
 for (let i = 0; i < 5; i++) {
-  technologyContents[i] = allTechnologyPostsData[i].title;
-  technologyAuthors[i] = allTechnologyPostsData[i].author;
+  technologyContents.push({
+    title: allTechnologyPostsData[i].title,
+    author: allTechnologyPostsData[i].author,
+    id: allTechnologyPostsData[i].id,
+    topic: allTechnologyPostsData[i].topic,
+  });
 }
 //
 const allArtPostsData = getSortedPostsData("posts/art");
-let artContents = [];
-let artAuthors = [];
-for (let i = 0; i < 5; i++) {
-  artContents[i] = allArtPostsData[i].title;
-  artAuthors[i] = allArtPostsData[i].author;
+const artContents = [];
+for (var i = 0; i < 5; i++) {
+  artContents.push({
+    title: allArtPostsData[i].title,
+    author: allArtPostsData[i].author,
+    id: allArtPostsData[i].id,
+    topic: allArtPostsData[i].topic,
+  });
 }
+
 //
 const allTourismPostsData = getSortedPostsData("posts/tourism");
 let tourismContents = [];
-let tourismAuthors = [];
 for (let i = 0; i < 5; i++) {
-  tourismContents[i] = allTourismPostsData[i].title;
-  tourismAuthors[i] = allTourismPostsData[i].author;
+  tourismContents.push({
+    title: allTourismPostsData[i].title,
+    author: allTourismPostsData[i].author,
+    id: allTourismPostsData[i].id,
+    topic: allTourismPostsData[i].topic,
+  });
 }
 //
 
@@ -79,48 +104,48 @@ export const topicData = [
     title: "اجتماعی",
     imageSrc: socialImg,
     contents: socialContents,
-    authors: socialAuthors,
+    href: "/social",
   },
   {
     title: "سیاسی",
     imageSrc: politicImg,
     contents: politicContents,
-    authors: politicAuthors,
+    href: "/politic",
   },
   {
     title: "نظامی",
     imageSrc: militaryImg,
     contents: militaryContents,
-    authors: militaryAuthors,
+    href: "/military",
   },
   {
     title: "ورزشی",
     imageSrc: sportImg,
     contents: sportContents,
-    authors: sportAuthors,
+    href: "/sport",
   },
   {
     title: "اقتصادی",
     imageSrc: economicImg,
     contents: economicContents,
-    authors: economicAuthors,
+    href: "/economic",
   },
   {
     title: "تکنولوژی",
     imageSrc: technologyImg,
     contents: technologyContents,
-    authors: technologyAuthors,
+    href: "/technology",
   },
   {
     title: "هنر",
     imageSrc: artImg,
     contents: artContents,
-    authors: artAuthors,
+    href: "/art",
   },
   {
     title: "گردشگری",
     imageSrc: tourismImg,
     contents: tourismContents,
-    authors: tourismAuthors,
+    href: "/tourism",
   },
 ];

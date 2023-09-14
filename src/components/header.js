@@ -47,7 +47,7 @@ export default function Header() {
         <Link className={headerLinkClassNames} href="/social">
           اجتماعی
         </Link>
-        <Link className={headerLinkClassNames} href="/political">
+        <Link className={headerLinkClassNames} href="/politic">
           سیاسی
         </Link>
         <Link className={headerLinkClassNames} href="/military">
