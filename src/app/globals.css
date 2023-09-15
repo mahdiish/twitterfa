@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+}
+
 @font-face {
-    font-family: "yekan";
-    src: url("../../public/assets/fonts/Yekan.ttf");
+  font-family: "yekan";
+  src: url("../../public/assets/fonts/Yekan.ttf");
 }
 @font-face {
-    font-family: "BHoma";
-    src: url("../../public/assets/fonts/BHoma_0.ttf");
+  font-family: "BHoma";
+  src: url("../../public/assets/fonts/BHoma_0.ttf");
 }
 @font-face {
-    font-family: "Vazir";
-    src: url("../../public/assets/fonts/Vazir.ttf");
+  font-family: "Vazir";
+  src: url("../../public/assets/fonts/Vazir.ttf");
 }

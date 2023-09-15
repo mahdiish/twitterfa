@@ -10,12 +10,13 @@ export default function TopicTemplate({ topic }) {
         className="block text-right py-1 px-2 odd:bg-gray-100 border-solid border-r-2 odd:border-twitter-blue even:border-gray-100"
       >
         <div className="flex justify-between items-center">
+          <p className="font-vazir text-sm w-11/12 whitespace-nowrap text-ellipsis overflow-hidden">
+            {content.title}
+          </p>
           {/* <div className="flex justify-between items-center w-3/12"> */}
           <FaHotjar className="text-twitter-blue text-base" />
           {/* <p className="font-vazir text-xs">{content.author}</p>
           </div> */}
-
-          <p className="font-vazir text-sm w-11/12">{content.title}</p>
         </div>
       </Link>
     );

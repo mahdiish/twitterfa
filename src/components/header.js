@@ -1,49 +1,44 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { AiOutlineClose } from "react-icons/ai";
-
+import { FaSearch } from "react-icons/fa";
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+//
+//
 export default function Header() {
-  const [headerLinkClassNames, setHeaderLinkClassNames] = useState(
-    "no-underline font-bold text-white text-base px-2 py-2 font-vazir border-solid border-b-2 border-transparent hover:border-white hidden md:block"
-  );
-  const [headerLinks, setHeaderLinks] = useState(
-    "flex flex-row-reverse justify-between items-center w-8/12"
-  );
-  const [closeMenuClassNames, setCloseMenuClassNames] = useState(
-    "hidden md:hidden text-white font-bold text-lg cursor-pointer absolute right-5 top-5"
-  );
-  const handleHamburgerClick = () => {
-    setHeaderLinkClassNames(
-      "no-underline font-bold text-white text-base px-2 py-2 font-vazir border-solid border-b-2 border-transparent hover:border-white"
-    );
-    setHeaderLinks(
-      "flex flex-col justify-between items-end pr-10 sm:pr-20 md:flex-row-reverse w-8/12 h-screen md:h-full absolute md:relative bg-twitter-blue top-0 left-0 py-10 md:py-0 md:items-center"
-    );
-    setCloseMenuClassNames(
-      "block md:hidden text-white font-bold text-lg cursor-pointer absolute right-5 top-5"
-    );
+  const headerLinkClassNames =
+    "no-underline font-bold text-white text-sm md:text-base px-2 py-4 md:py-3 mx-1 font-vazir border-solid border-b-2 border-transparent hover:border-white";
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleSearchTermChange = (event) => {
+    setSearchTerm(event.target.value);
+    console.log(searchTerm);
   };
-  const handleCloseMenuClick = () => {
-    setHeaderLinkClassNames(
-      "no-underline font-bold text-white text-base px-2 py-2 font-vazir border-solid border-b-2 border-transparent hover:border-white hidden md:block"
-    );
-    setHeaderLinks("flex flex-row-reverse justify-between items-center w-8/12");
-    setCloseMenuClassNames(
-      "hidden md:hidden text-white font-bold text-lg cursor-pointer absolute right-5 top-5"
-    );
-  };
+
   return (
-    <div className="flex flex-row-reverse justify-between items-center w-full h-16 bg-twitter-blue px-10 mb-3">
-      <Link className="text-2xl font-bold text-white font-vazir" href="/">
-        توییترفا
-      </Link>
-      <div className={headerLinks}>
-        <AiOutlineClose
-          className={closeMenuClassNames}
-          onClick={handleCloseMenuClick}
-        />
+    <div className="sticky top-0 drop-shadow-md">
+      <div className="flex justify-between items-center w-full h-20 px-5 md:px-14 overflow-hidden bg-white">
+        <Link
+          className="text-2xl font-bold text-twitter-blue font-vazir"
+          href="/"
+        >
+          توییترفا
+        </Link>
+        <div className="w-7/12 sm:5/12 md:w-4/12">
+          <div className="flex justify-between items-center border-solid border-2 border-twitter-blue h-9 rounded">
+            <input
+              placeholder="در بین توییتها جستجو کنید..."
+              className="border-none	focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full"
+              value={searchTerm}
+              onChange={handleSearchTermChange}
+            ></input>
+            <div className="h-9 w-9 bg-twitter-blue flex justify-around items-center cursor-pointer">
+              <FaSearch className="text-xl font-bold text-white text-left" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-twitter-blue flex justify-between items-center px-4 md:px-16 h-14 w-full overflow-x-auto md:overflow-x-hidden [&::-webkit-scrollbar]:hidden">
         <Link className={headerLinkClassNames} href="/social">
           اجتماعی
         </Link>
@@ -69,10 +64,6 @@ export default function Header() {
           گردشگری
         </Link>
       </div>
-      <RxHamburgerMenu
-        onClick={handleHamburgerClick}
-        className="block md:hidden text-white font-bold text-lg cursor-pointer"
-      />
     </div>
   );
 }

@@ -3,15 +3,15 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="mt-3">
-      <div className="bg-sky-400 flex flex-row-reverse justify-around items-center px-4 h-16">
+      <div className="bg-sky-400 flex justify-around items-center px-4 h-16">
         <Link
-          href="/about-us"
+          href="/about"
           className="text-white text-base font-vazir no-underline font-medium"
         >
           درباره ما
         </Link>
         <Link
-          href="/contact-us"
+          href="/contact"
           className="text-white text-base font-vazir no-underline font-medium"
         >
           ارتباط با ما

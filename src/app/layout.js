@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+
 export const metadata = {
   title: "توییترفا؛ برگزیده توییتر فارسی",
   description: "توییت های برگزیده توییتر فارسی",
@@ -9,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="rtl">
         <Header />
         {children}
         <Footer />

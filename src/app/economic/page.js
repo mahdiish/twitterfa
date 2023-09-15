@@ -7,14 +7,18 @@ const renderedContents = allArtPostsData.map((content) => {
   return (
     <Link
       href={`/art/${content.id}`}
-      className="block text-right py-1 px-2 even:bg-gray-100 border-solid border-r-2 even:border-twitter-blue odd:border-gray-100"
+      className="block text-right py-1 px-6 even:bg-gray-100 border-solid border-r-2 even:border-twitter-blue odd:border-gray-100"
     >
-      <div className="flex justify-between items-center px-5">
-        <div className="flex justify-between items-center w-2/5">
-          <FaHotjar className="text-twitter-blue text-base" />
-          <p className="font-vazir text-sm">{content.author}</p>
+      <div className="flex justify-between items-center">
+        <p className="font-vazir text-sm w-8/12 whitespace-nowrap text-ellipsis overflow-hidden">
+          {content.title}
+        </p>
+        <div className="flex justify-between items-center w-4/12 mr-2">
+          <p className="font-vazir text-sm whitespace-nowrap text-ellipsis overflow-hidden">
+            {content.author}
+          </p>
+          <FaHotjar className="text-twitter-blue text-base mr-1" />
         </div>
-        <p className="font-vazir text-sm w-3/5">{content.title}</p>
       </div>
     </Link>
   );
