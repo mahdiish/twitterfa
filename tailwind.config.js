@@ -1,21 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./store/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        'twitter-blue': '#1D9BF0',
+        "twitter-blue": "#1D9BF0",
       },
-      fontFamily :{
+      fontFamily: {
         yekan: ["yekan"],
         homa: ["BHoma"],
-        vazir: ["Vazir"]
-      }
+        vazir: ["Vazir"],
+      },
     },
   },
   plugins: [],
-}
+};

@@ -2,7 +2,7 @@
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="mt-3">
+    <div>
       <div className="bg-sky-400 flex justify-around items-center px-4 h-16">
         <Link
           href="/about"

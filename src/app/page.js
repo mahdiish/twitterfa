@@ -1,8 +1,8 @@
 import TopicTemplate from "@/components/TopicTemplate";
 import { topicData } from "@/data/topicData";
+import Background from "@/components/background";
 
 export default function Home() {
-  ///
   const renderedTopics = topicData.map((topic) => {
     return (
       <div>
@@ -12,10 +12,10 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8 sm:p-10">
+    <Background>
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8">
         {renderedTopics}
       </div>
-    </main>
+    </Background>
   );
 }

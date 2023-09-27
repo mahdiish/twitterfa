@@ -3,20 +3,75 @@ import { useState } from "react";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import useStore from "../../store/store";
+
 //
 //
 export default function Header() {
+  const theme = useStore((state) => state.theme);
+  const darkTheme = useStore((state) => state.darkTheme);
+  const lightTheme = useStore((state) => state.lightTheme);
+  const ballClassNamesFn = (theme) => {
+    if (theme === "initial") {
+      return "absolute w-[30px] h-[30px] m-[5px] rounded-full duration-200 bg-twitter-blue";
+    } else if (theme === "light") {
+      return "absolute w-[30px] h-[30px] m-[5px] rounded-full duration-200 bg-twitter-blue translate-x-[0px]";
+    } else if (theme === "dark") {
+      return "absolute w-[30px] h-[30px] m-[5px] rounded-full duration-200 bg-twitter-blue -translate-x-[40px]";
+    }
+  };
+
+  const sunClassNamesFn = (theme) => {
+    if (theme === "initial") {
+      return "text-[20px] text-center text-white z-10 w-1/2 leading-[40px]";
+    } else if (theme === "light") {
+      return "text-[20px] text-center text-white z-10 w-1/2 leading-[40px]";
+    } else if (theme === "dark") {
+      return "text-[20px] text-center text-twitter-blue z-10 w-1/2 leading-[40px]";
+    }
+  };
+
+  const moonClassNamesFn = (theme) => {
+    if (theme === "initial") {
+      return "text-[20px] text-center text-twitter-blue z-10 w-1/2 leading-[40px]";
+    } else if (theme === "light") {
+      return "text-[20px] text-center text-twitter-blue z-10 w-1/2 leading-[40px]";
+    } else if (theme === "dark") {
+      return "text-[20px] text-center text-white z-10 w-1/2 leading-[40px]";
+    }
+  };
+
+  const upperHeaderClassNamesFn = (theme) => {
+    if (theme === "initial") {
+      return "flex justify-between items-center w-full h-20 px-5 md:px-14 overflow-hidden bg-white";
+    } else if (theme === "light") {
+      return "flex justify-between items-center w-full h-20 px-5 md:px-14 overflow-hidden bg-white";
+    } else if (theme === "dark") {
+      return "flex justify-between items-center w-full h-20 px-5 md:px-14 overflow-hidden bg-black";
+    }
+  };
+
+  const inputClassNamesFn = (theme) => {
+    if (theme === "initial") {
+      return "border-none focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full bg-white";
+    } else if (theme === "light") {
+      return "border-none focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full bg-white";
+    } else if (theme === "dark") {
+      return "border-none focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full bg-black";
+    }
+  };
+
+  //
   const headerLinkClassNames =
     "no-underline font-bold text-white text-sm md:text-base px-2 py-4 md:py-3 mx-1 font-vazir border-solid border-b-2 border-transparent hover:border-white";
   const [searchTerm, setSearchTerm] = useState("");
   const handleSearchTermChange = (event) => {
     setSearchTerm(event.target.value);
-    console.log(searchTerm);
   };
 
   return (
     <div className="sticky top-0 drop-shadow-md">
-      <div className="flex justify-between items-center w-full h-20 px-5 md:px-14 overflow-hidden bg-white">
+      <div className={upperHeaderClassNamesFn(theme)}>
         <Link
           className="text-2xl font-bold text-twitter-blue font-vazir"
           href="/"
@@ -27,7 +82,7 @@ export default function Header() {
           <div className="flex justify-between items-center border-solid border-2 border-twitter-blue h-9 rounded">
             <input
               placeholder="در بین توییتها جستجو کنید..."
-              className="border-none	focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full"
+              className={inputClassNamesFn(theme)}
               value={searchTerm}
               onChange={handleSearchTermChange}
             ></input>
@@ -35,6 +90,20 @@ export default function Header() {
               <FaSearch className="text-xl font-bold text-white text-left" />
             </div>
           </div>
+        </div>
+
+        <div className="flex flex-row justify-center items-center">
+          <label className="cursor-pointer flex justify-between items-center w-[80px] h-[40px] rounded-full duration-200 border-solid border border-twitter-blue">
+            <BsFillSunFill
+              className={sunClassNamesFn(theme)}
+              onClick={lightTheme}
+            />
+            <BsFillMoonFill
+              className={moonClassNamesFn(theme)}
+              onClick={darkTheme}
+            />
+            <span className={ballClassNamesFn(theme)}></span>
+          </label>
         </div>
       </div>
 
