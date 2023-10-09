@@ -1,11 +1,11 @@
 import { getSortedPostsData } from "../../../lib/posts";
 import Background from "@/components/background";
-import TopicPageTemplate from "@/components/TopicPageTemplate";
+import ItemTemplate from "@/components/ItemTemplate";
 const allEconomicPostsData = getSortedPostsData("posts/economic");
 
 export default function EconomicPage() {
   const renderedContents = allEconomicPostsData.map((content) => {
-    return <TopicPageTemplate content={content} key={content.id} />;
+    return <ItemTemplate content={content} key={content.id} />;
   });
   return (
     <Background>

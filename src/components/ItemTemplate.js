@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaHotjar } from "react-icons/fa";
 import useStore from "../../store/store";
 
-export default function TopicPageTemplate({ content }) {
+export default function ItemTemplate({ content }) {
   const theme = useStore((state) => state.theme);
   const contentTitleFn = (theme) => {
     if (theme === "initial" || theme === "light") {
