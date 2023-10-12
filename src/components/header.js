@@ -1,16 +1,22 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import useStore from "../../store/store";
+import { useRouter } from "next/navigation";
 
 //
 //
+
 export default function Header() {
   const theme = useStore((state) => state.theme);
   const darkTheme = useStore((state) => state.darkTheme);
   const lightTheme = useStore((state) => state.lightTheme);
+  const searchTerm = useStore((state) => state.searchTerm);
+  const handleSearchTermChange = useStore(
+    (state) => state.handleSearchTermChange
+  );
+  const initialSearchTerm = useStore((state) => state.initialSearchTerm);
   const ballClassNamesFn = (theme) => {
     if (theme === "initial") {
       return "absolute w-[30px] h-[30px] m-[5px] rounded-full duration-200 bg-twitter-blue";
@@ -64,10 +70,8 @@ export default function Header() {
   //
   const headerLinkClassNames =
     "no-underline font-bold text-white text-sm md:text-base px-2 py-4 md:py-3 mx-1 font-vazir border-solid border-b-2 border-transparent hover:border-white";
-  const [searchTerm, setSearchTerm] = useState("");
-  const handleSearchTermChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
+
+  const router = useRouter();
 
   return (
     <div className="sticky top-0 drop-shadow-md">
@@ -81,13 +85,28 @@ export default function Header() {
         <div className="w-7/12 sm:5/12 md:w-4/12">
           <div className="flex justify-between items-center border-solid border-2 border-twitter-blue h-9 rounded">
             <input
-              placeholder="در بین توییتها جستجو کنید..."
+              placeholder="در بین توییتها، تگها و ... جستجو کنید"
               className={inputClassNamesFn(theme)}
               value={searchTerm}
               onChange={handleSearchTermChange}
+              onKeyDown={(event) => {
+                if (event.target.value !== "" && event.key === "Enter") {
+                  router.push(`/search?q=${event.target.value}`);
+                  event.target.value = "";
+                  event.target.blur();
+                }
+              }}
             ></input>
-            <div className="h-9 w-9 bg-twitter-blue flex justify-around items-center cursor-pointer">
-              <FaSearch className="text-xl font-bold text-white text-left" />
+            <div className="h-9 w-9 bg-twitter-blue flex justify-around items-center">
+              <FaSearch
+                className="text-xl font-bold text-white text-left cursor-pointer"
+                onClick={() => {
+                  if (searchTerm !== "") {
+                    router.push(`/search?q=${searchTerm}`);
+                    initialSearchTerm();
+                  }
+                }}
+              />
             </div>
           </div>
         </div>
