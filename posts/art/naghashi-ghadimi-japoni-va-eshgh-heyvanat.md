@@ -5,7 +5,7 @@ author: "卩-ﾌ 隠 ſ-Ԁ"
 authorId: "@DetectivePiJey"
 link: "https://twitter.com/DetectivePiJey/status/1699228977674543396"
 topic: "art"
-tags: ["حیوانات"]
+tags: ["پت", "حیوان خانگی"]
 ---
 
 نقاشی قدیمی ژاپنی.

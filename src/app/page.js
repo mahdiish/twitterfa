@@ -1,6 +1,7 @@
 import TopicTemplate from "@/components/TopicTemplate";
 import { topicData } from "@/data/topicData";
 import Background from "@/components/background";
+import { toPersianNumber } from "../../lib/posts";
 
 export default function Home() {
   const renderedTopics = topicData.map((topic) => {

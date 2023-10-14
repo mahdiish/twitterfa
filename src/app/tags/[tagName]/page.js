@@ -1,6 +1,7 @@
 import { getAllTags, getPostsWithTag } from "../../../../lib/posts";
 import Background from "@/components/background";
 import TagItemTemplate from "@/components/TagItemTemplate";
+import { toPersianNumber } from "../../../../lib/digits";
 
 export function generateStaticParams() {
   const tags = getAllTags([
@@ -22,7 +23,7 @@ export function generateMetadata({ params }) {
   let { tagName } = params;
   tagName = decodeURIComponent(tagName);
   return {
-    title: `مطالب حاوی تگ ${tagName} - توییترفا`,
+    title: `مطالب حاوی تگ ${toPersianNumber(tagName)} - توییترفا`,
   };
 }
 
@@ -49,7 +50,7 @@ export default async function Post({ params }) {
   return (
     <Background>
       <h1 className="text-right font-vazir pb-3 px-2">
-        مطالب حاوی تگ {tagName}
+        مطالب حاوی تگ {toPersianNumber(tagName)}
       </h1>
       <div>{renderedContents}</div>
     </Background>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaHotjar } from "react-icons/fa";
 import useStore from "../../store/store";
+import { toPersianNumber } from "../../lib/digits";
 
 export default function TopicTemplate({ topic }) {
   const theme = useStore((state) => state.theme);
@@ -29,7 +30,9 @@ export default function TopicTemplate({ topic }) {
         className={contentFn(theme)}
       >
         <div className="flex justify-between items-center">
-          <p className={contentTitleFn(theme)}>{content.title}</p>
+          <p className={contentTitleFn(theme)}>
+            {toPersianNumber(content.title)}
+          </p>
 
           <FaHotjar className="text-twitter-blue text-base" />
         </div>
@@ -45,9 +48,10 @@ export default function TopicTemplate({ topic }) {
   };
   const renderedTitle = (
     <h1 className={topicTitleFn(theme)}>
-      <Link href={topic.href}>{topic.title}</Link>
+      <Link href={topic.href}>{toPersianNumber(topic.title)}</Link>
     </h1>
   );
+
   return (
     <div className="border-solid border-2 border-gray-200 p-1 rounded-lg">
       <Image

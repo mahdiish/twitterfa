@@ -5,6 +5,7 @@ import {
   getContentsWithTerm,
   getTagsWithTerm,
 } from "../../../../lib/posts";
+import { toPersianNumber } from "../../../../lib/digits";
 
 export default function Home({ searchParams }) {
   const searchTerm = searchParams.q;
@@ -61,7 +62,7 @@ export default function Home({ searchParams }) {
   return (
     <Background>
       <h1 className="text-right font-vazir font-bold pb-3 px-2">
-        نتایج برای {searchTerm}
+        نتایج برای {toPersianNumber(searchTerm)}
       </h1>
 
       <div className="flex font-vazir text-base font-normal mb-4">
@@ -71,7 +72,7 @@ export default function Home({ searchParams }) {
         >
           مطالب
           <span className="text-[11px] font-thin pr-[0.5px] pb-2">
-            {contentsWithTerm.length}
+            {toPersianNumber(`${contentsWithTerm.length}`)}
           </span>
         </Link>
 
@@ -81,7 +82,7 @@ export default function Home({ searchParams }) {
         >
           تگ ها
           <span className="text-[11px] font-thin pr-[0.5px] pb-2">
-            {tagsWithTerm.length}
+            {toPersianNumber(`${tagsWithTerm.length}`)}
           </span>
         </Link>
 
@@ -91,7 +92,7 @@ export default function Home({ searchParams }) {
         >
           نویسندگان{" "}
           <span className="text-[11px] font-thin pr-[0.5px] pb-2">
-            {authorsWithTerm.length}
+            {toPersianNumber(`${authorsWithTerm.length}`)}
           </span>
         </Link>
       </div>

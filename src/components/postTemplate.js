@@ -3,6 +3,7 @@ import useStore from "../../store/store";
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+import { toPersianNumber } from "../../lib/digits";
 
 export default function PostTemplate({
   title,
@@ -32,7 +33,7 @@ export default function PostTemplate({
   const renderedTags = tags.map((tag) => {
     return (
       <Link href={`/tags/${tag}`} className={tagClassNamesFn(theme)}>
-        {tag}
+        {toPersianNumber(tag)}
       </Link>
     );
   });
@@ -40,7 +41,7 @@ export default function PostTemplate({
     <div className="flex text-right flex-col items-center w-full">
       <div className={backgroundClassNamesFn(theme)}>
         <h1 className="font-vazir pb-2 px-2 font-bold text-base mt-3">
-          {title}
+          {toPersianNumber(title)}
         </h1>
 
         <div className="flex items-center mb-3.5">
@@ -52,12 +53,12 @@ export default function PostTemplate({
               className="rounded-full ml-2"
             />
             <p className="font-vazir text-sm pl-3 whitespace-nowrap text-ellipsis overflow-hidden">
-              {author}
+              {toPersianNumber(author)}
             </p>
           </Link>
           <p className=" font-vazir text-sm pl-3">|</p>
           <p className=" font-vazir text-sm whitespace-nowrap text-ellipsis overflow-hidden">
-            {date}
+            {toPersianNumber(date)}
           </p>
         </div>
 

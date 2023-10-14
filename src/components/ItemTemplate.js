@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { FaHotjar } from "react-icons/fa";
 import useStore from "../../store/store";
+import { toPersianNumber } from "../../lib/digits";
 
 export default function ItemTemplate({ content }) {
   const theme = useStore((state) => state.theme);
@@ -19,11 +20,11 @@ export default function ItemTemplate({ content }) {
     >
       <div className="flex justify-between items-center">
         <p className="font-vazir text-sm w-8/12 whitespace-nowrap text-ellipsis overflow-hidden">
-          {content.title}
+          {toPersianNumber(content.title)}
         </p>
         <div className="flex justify-between items-center w-4/12 mr-2">
           <p className="font-vazir text-sm whitespace-nowrap text-ellipsis overflow-hidden">
-            {content.author}
+            {toPersianNumber(content.author)}
           </p>
           <FaHotjar className="text-twitter-blue text-base mr-1" />
         </div>
