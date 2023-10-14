@@ -3,6 +3,7 @@ import useStore from "../../store/store";
 import Image from "next/image";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
+
 export default function PostTemplate({
   title,
   authorId,
@@ -41,19 +42,19 @@ export default function PostTemplate({
         <h1 className="font-vazir pb-2 px-2 font-bold text-base mt-3">
           {title}
         </h1>
+
         <div className="flex items-center mb-3.5">
-          <Image
-            src={`/profiles/${authorId}.jpg`}
-            width={45}
-            height={45}
-            className="rounded-full ml-2"
-          />
-          <a
-            href={link}
-            className="font-vazir text-sm pl-3 whitespace-nowrap text-ellipsis overflow-hidden"
-          >
-            {author}
-          </a>
+          <Link href={`/authors/${author}`} className="flex items-center">
+            <Image
+              src={`/profiles/${authorId}.jpg`}
+              width={45}
+              height={45}
+              className="rounded-full ml-2"
+            />
+            <p className="font-vazir text-sm pl-3 whitespace-nowrap text-ellipsis overflow-hidden">
+              {author}
+            </p>
+          </Link>
           <p className=" font-vazir text-sm pl-3">|</p>
           <p className=" font-vazir text-sm whitespace-nowrap text-ellipsis overflow-hidden">
             {date}
