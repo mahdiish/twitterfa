@@ -59,7 +59,7 @@ export default async function Post({ params }) {
   const { postId } = params;
 
   if (!posts.find((post) => post.id === postId)) notFound();
-  console.log(getPostData(posts, postId));
+
   let { title, date, author, authorId, link, tags, contentHtml } =
     await getPostData(posts, postId);
 
