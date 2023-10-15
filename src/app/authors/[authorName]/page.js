@@ -32,7 +32,7 @@ export default async function Post({ params }) {
   let { authorName } = params;
   authorName = decodeURIComponent(authorName);
 
-  const allAuthorPosts = getPostsWithAuthor(
+  const allAuthorPosts = await getPostsWithAuthor(
     [
       "posts/art",
       "posts/economic",

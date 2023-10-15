@@ -30,7 +30,7 @@ export function generateMetadata({ params }) {
 export default async function Post({ params }) {
   let { tagName } = params;
   tagName = decodeURIComponent(tagName);
-  const allTagPosts = getPostsWithTag(
+  const allTagPosts = await getPostsWithTag(
     [
       "posts/art",
       "posts/economic",

@@ -1,4 +1,4 @@
-import { getSortedPostsData } from "../../../lib/posts";
+import { getPostsData } from "../../../lib/posts";
 import Background from "@/components/background";
 import ItemTemplate from "@/components/ItemTemplate";
 
@@ -47,7 +47,7 @@ export default async function Post({ params }) {
     "posts/technology": "تکنولوژی",
     "posts/tourism": "گردشگری",
   };
-  const allPostsData = getSortedPostsData(`posts/${topic}`);
+  const allPostsData = await getPostsData(`posts/${topic}`);
   const renderedTopic = (
     <h1 className="text-right font-vazir pb-2 px-2">
       {pathEquals[`posts/${topic}`]}

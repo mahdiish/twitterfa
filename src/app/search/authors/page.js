@@ -7,9 +7,9 @@ import {
 } from "../../../../lib/posts";
 import { toPersianNumber } from "../../../../lib/digits";
 
-export default function Home({ searchParams }) {
+export default async function Home({ searchParams }) {
   const searchTerm = searchParams.q;
-  const authorsWithTerm = getAuthorsWithTerm(
+  const authorsWithTerm = await getAuthorsWithTerm(
     [
       "posts/art",
       "posts/economic",
@@ -32,7 +32,7 @@ export default function Home({ searchParams }) {
     );
   });
 
-  const tagsWithTerm = getTagsWithTerm(
+  const tagsWithTerm = await getTagsWithTerm(
     [
       "posts/art",
       "posts/economic",
@@ -46,7 +46,7 @@ export default function Home({ searchParams }) {
     searchTerm
   );
 
-  const contentsWithTerm = getContentsWithTerm(
+  const contentsWithTerm = await getContentsWithTerm(
     [
       "posts/art",
       "posts/economic",

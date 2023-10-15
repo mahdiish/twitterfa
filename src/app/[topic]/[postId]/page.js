@@ -1,4 +1,7 @@
-import { getPostData, getSortedPostsDataTopics } from "../../../../lib/posts";
+import {
+  getPostsDataTopics,
+  getSortedPostsDataTopics,
+} from "../../../../lib/posts";
 import { notFound } from "next/navigation";
 import Background from "@/components/background";
 import PostTemplate from "@/components/postTemplate";
@@ -61,7 +64,7 @@ export default async function Post({ params }) {
   if (!posts.find((post) => post.id === postId)) notFound();
 
   let { title, date, author, authorId, link, tags, contentHtml } =
-    await getPostData(posts, postId);
+    await getPostsDataTopics(posts, postId);
 
   return (
     <Background>

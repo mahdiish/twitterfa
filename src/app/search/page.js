@@ -8,9 +8,9 @@ import {
 import { toPersianNumber } from "../../../lib/digits";
 import TagItemTemplate from "@/components/TagItemTemplate";
 
-export default function Home({ searchParams }) {
+export default async function Home({ searchParams }) {
   const searchTerm = searchParams.q;
-  const contentsWithTerm = getContentsWithTerm(
+  const contentsWithTerm = await getContentsWithTerm(
     [
       "posts/art",
       "posts/economic",
@@ -26,7 +26,7 @@ export default function Home({ searchParams }) {
   const renderedContents = contentsWithTerm.map((content) => {
     return <TagItemTemplate content={content} key={content.id} />;
   });
-  const tagsWithTerm = getTagsWithTerm(
+  const tagsWithTerm = await getTagsWithTerm(
     [
       "posts/art",
       "posts/economic",
@@ -39,7 +39,7 @@ export default function Home({ searchParams }) {
     ],
     searchTerm
   );
-  const authorsWithTerm = getAuthorsWithTerm(
+  const authorsWithTerm = await getAuthorsWithTerm(
     [
       "posts/art",
       "posts/economic",
