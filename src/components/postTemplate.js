@@ -66,25 +66,40 @@ export default function PostTemplate({
           className="font-vazir text-[15px] text-right"
           components={{
             img: function ({ ...props }) {
-              const substrings = props.alt?.split("{{");
-              const alt = substrings[0].trim();
+              const srcText = props.src;
+              const dotIndex = srcText.split("").indexOf(".");
+              const mediaFormat = srcText.split("").splice(dotIndex).join("");
+              if (mediaFormat === ".mp4") {
+                const substrings = props.alt?.split("{{");
+                const alt = substrings[0].trim();
+                return (
+                  <video
+                    width="350"
+                    height="100"
+                    controls
+                    className="my-5 mx-auto"
+                  >
+                    <source src={props.src} type="video/mp4"></source>
+                  </video>
+                );
+              } else if (
+                mediaFormat === ".jpg" ||
+                mediaFormat === ".webp" ||
+                mediaFormat === ".png"
+              ) {
+                const substrings = props.alt?.split("{{");
+                const alt = substrings[0].trim();
 
-              const width = substrings[1]
-                ? substrings[1].match(/(?<=w:\s?)\d+/g)[0]
-                : 800;
-              const height = substrings[1]
-                ? substrings[1].match(/(?<=h:\s?)\d+/g)[0]
-                : 400;
-
-              return (
-                <Image
-                  src={props.src}
-                  alt={alt}
-                  width={350}
-                  height={100}
-                  className="my-5 mx-auto"
-                />
-              );
+                return (
+                  <Image
+                    src={props.src}
+                    alt={alt}
+                    width={350}
+                    height={100}
+                    className="my-5 mx-auto"
+                  />
+                );
+              }
             },
           }}
         >
