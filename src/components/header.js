@@ -79,7 +79,7 @@ export default function Header() {
         <Link className="text-2xl font-bold text-twitter-blue " href="/">
           توییترفا
         </Link>
-        <div className="w-7/12 sm:5/12 md:w-4/12">
+        <div className="w-6/12 sm:5/12 md:w-4/12">
           <div className="flex justify-between items-center border-solid border-2 border-twitter-blue h-9 rounded">
             <input
               placeholder="در بین توییتها، تگها و ... جستجو کنید"
