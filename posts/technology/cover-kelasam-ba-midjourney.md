@@ -1,6 +1,7 @@
 ---
 title: "ساخت کاور کلاس با میدجرنی 🥲🥲"
 date: "1402-07-14"
+time: "1402-07-14 - 17:06"
 author: "Sahar"
 authorId: "@Saharaminy"
 link: "https://twitter.com/Saharaminy/status/1709576593302061276"

@@ -1,6 +1,7 @@
 ---
 title: "ملیسا وارگاس، والیبالیست کوبایی تیم ملی ترکیه"
 date: "1402-06-15"
+time: "1402-06-15 - 19:15"
 author: "Parviz Partokiya"
 authorId: "@Partokiya"
 link: "https://twitter.com/Partokiya/status/1698708984209838205"

@@ -10,9 +10,9 @@ export default function TopicTemplate({ topic }) {
   const renderedContents = topic.contents.map((content) => {
     const contentTitleFn = (theme) => {
       if (theme === "initial" || theme === "light") {
-        return "font-vazir text-sm w-11/12 whitespace-nowrap text-ellipsis overflow-hidden text-black";
+        return "text-sm w-11/12 whitespace-nowrap text-ellipsis overflow-hidden text-black";
       } else if (theme === "dark") {
-        return "font-vazir text-sm w-11/12 whitespace-nowrap text-ellipsis overflow-hidden text-white";
+        return "text-sm w-11/12 whitespace-nowrap text-ellipsis overflow-hidden text-white";
       }
     };
 
@@ -26,6 +26,7 @@ export default function TopicTemplate({ topic }) {
 
     return (
       <Link
+        key={`${content.topic}-${content.id}`}
         href={`${content.topic}/${content.id}`}
         className={contentFn(theme)}
       >
@@ -41,9 +42,9 @@ export default function TopicTemplate({ topic }) {
   });
   const topicTitleFn = (theme) => {
     if (theme === "initial" || theme === "light") {
-      return "text-right font-vazir p-1 text-black";
+      return "text-right p-1 text-black";
     } else if (theme === "dark") {
-      return "text-right font-vazir p-1 text-white";
+      return "text-right p-1 text-white";
     }
   };
   const renderedTitle = (
@@ -58,6 +59,7 @@ export default function TopicTemplate({ topic }) {
         src={topic.imageSrc}
         width={500}
         height={500}
+        alt={topic.title}
         className="w-full h-60"
       />
       {renderedTitle}

@@ -1,6 +1,7 @@
 ---
 title: "کوتینیو به صورت قرضی به الدحیل پیوست"
 date: "1402-06-18"
+time: "1402-06-18 - 18:02"
 author: "⚽️ تا‌‌ خرتناق فوتبالی ⚽️"
 authorId: "@taakhertenagh"
 link: "https://twitter.com/taakhertenagh/status/1700199747498164729"

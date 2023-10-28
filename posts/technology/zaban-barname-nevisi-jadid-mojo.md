@@ -1,6 +1,7 @@
 ---
 title: "زبان برنامه نویسی جدید موجو"
 date: "1402-06-17"
+time: "1402-06-17 - 23:11"
 author: "Sabber"
 authorId: "@sabber_dev"
 link: "https://twitter.com/sabber_dev/status/1699929598706720890"

@@ -1,6 +1,7 @@
 ---
 title: "حضور یک قورباغه در تصویر ثبت شده هنگام پرتاب موشک ناسا"
 date: "1402-06-17"
+time: "1402-06-17 - 22:05"
 author: "ناسا فارسی"
 authorId: "@Nasa_Farsinews"
 link: "https://twitter.com/Nasa_Farsinews/status/1699873619357073790"

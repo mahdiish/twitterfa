@@ -1,7 +1,6 @@
 import {
   getPostsDataTopics,
   getSortedPostsDataTopics,
-  getPostDataTest,
 } from "../../../../lib/posts";
 import { notFound } from "next/navigation";
 import Background from "@/components/background";

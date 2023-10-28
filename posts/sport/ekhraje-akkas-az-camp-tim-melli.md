@@ -1,6 +1,7 @@
 ---
 title: "اخراج عکاس از کمپ تیم ملی فوتبال"
 date: "1402-06-15"
+time: "1402-06-15 - 09:10"
 author: "آمینواسید"
 authorId: "@NR2OH"
 link: "https://twitter.com/NR2OH/status/1698721014966870336"

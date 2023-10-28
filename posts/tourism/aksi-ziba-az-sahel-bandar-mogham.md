@@ -1,6 +1,7 @@
 ---
 title: "عکسی زیبا از ساحل بندر مقام"
 date: "1402-06-17"
+time: "1402-06-17 - 19:56"
 author: "Iran land"
 authorId: "@Iranland7"
 link: "https://twitter.com/Iranland7/status/1698340266120257942"

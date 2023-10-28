@@ -1,6 +1,7 @@
 ---
 title: "تصاویری از رزمایش مشترک نیروی هوایی چین و پاکستان"
 date: "1402-06-18"
+time: "1402-06-18 - 16:14"
 author: "Partisan"
 authorId: "@Partisan2015"
 link: "https://twitter.com/Partisan2015/status/1699087636936224905"

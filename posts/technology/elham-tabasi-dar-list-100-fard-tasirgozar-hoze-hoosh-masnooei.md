@@ -1,6 +1,7 @@
 ---
 title: "الهام طبسی در لیست 100 فرد تاثیرگذار حوزه هوش مصنوعی"
 date: "1402-06-17"
+time: "1402-06-17 - 19:56"
 author: "Digiato | دیجیاتو"
 authorId: "@Digiato"
 link: "https://twitter.com/Digiato/status/1700085773863702713"

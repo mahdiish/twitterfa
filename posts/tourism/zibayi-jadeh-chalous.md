@@ -1,6 +1,7 @@
 ---
 title: "زیبایی جاده چالوس"
 date: "1402-06-17"
+time: "1402-06-17 - 17:56"
 author: "🇮🇷 yas_Fatemi"
 authorId: "@hooraa_Egh"
 link: "https://twitter.com/hooraa_Egh/status/1697129836072882549"

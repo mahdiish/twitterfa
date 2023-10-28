@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Background from "@/components/background";
+import TagTemplate from "@/components/tagTemplate";
 import {
   getAuthorsWithTerm,
   getContentsWithTerm,
@@ -24,10 +25,8 @@ export default async function Home({ searchParams }) {
   );
   const renderedTags = tagsWithTerm.map((tag) => {
     return (
-      <Link href={`/tags/${tag}`}>
-        <p className="mx-2 px-3 py-1 inline-block font-vazir text-sm text-black font-medium bg-gray-300 rounded-md">
-          {tag}
-        </p>
+      <Link href={`/tags/${tag}`} key={tag}>
+        <TagTemplate tag={tag} />
       </Link>
     );
   });
@@ -97,7 +96,9 @@ export default async function Home({ searchParams }) {
         </Link>
       </div>
 
-      <div>{renderedTags}</div>
+      <div className="grid gap-2 grid-cols-2 sm:grid-cols-4 md:grid-cols-5">
+        {renderedTags}
+      </div>
     </Background>
   );
 }

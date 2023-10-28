@@ -1,6 +1,7 @@
 ---
 title: "کنسرت محمدرضا شجریان در حافظیه سال 56"
 date: "1402-06-16"
+time: "1402-06-16 - 13:40"
 author: "میرِ خُن‌سار"
 authorId: "@Saoshy"
 link: "https://twitter.com/Saoshy/status/1699837859619041674"

@@ -1,6 +1,7 @@
 ---
 title: "نقاشی قدیمی ژاپنی که عشق به حیوانات را به تصویر میکشد"
 date: "1402-06-16"
+time: "1402-06-16 - 11:10"
 author: "卩-ﾌ 隠 ſ-Ԁ"
 authorId: "@DetectivePiJey"
 link: "https://twitter.com/DetectivePiJey/status/1699228977674543396"

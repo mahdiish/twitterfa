@@ -1,6 +1,7 @@
 ---
 title: "رانندگی 7 هزار کیلومتر و پیشنهاد خواستگاری با جی پی اس روی نقشه"
 date: "1402-06-18"
+time: "1402-06-18 - 09:17"
 author: "شنل قرمزی"
 authorId: "@shaparak55"
 link: "https://twitter.com/shaparak55/status/1700450479317094454"

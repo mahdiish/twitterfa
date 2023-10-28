@@ -1,6 +1,7 @@
 ---
 title: "قیمت جهانی طلا امروز ۱۴۰۲/۰۶/۱۸"
 date: "1402-06-18"
+time: "1402-06-18 - 09:10"
 author: "وبانگاه | هاب خبری"
 authorId: "@webangah_farsi"
 link: "https://twitter.com/webangah_farsi/status/1700406194160972149"

@@ -1,6 +1,7 @@
 ---
 title: "بانک مرکزی جایگزینی دلار ۳۷۵۰۰ به جای ۲۸۵۰۰ را تائید کرد"
 date: "1402-06-18"
+time: "1402-06-18 - 08:10"
 author: "EcoBizDaily"
 authorId: "@EcoBizDaily"
 link: "https://twitter.com/EcoBizDaily/status/1698645967514349617"

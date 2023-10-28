@@ -1,6 +1,7 @@
 ---
 title: "مگر نمی شود آدم سال های بعد را به یاد آورد و برای خودش گریه کند؟"
 date: "1402-06-18"
+time: "1402-06-18 - 11:43"
 author: "میم هستم"
 authorId: "@AynAlefMim"
 link: "https://twitter.com/AynAlefMim/status/1404872614523322369"

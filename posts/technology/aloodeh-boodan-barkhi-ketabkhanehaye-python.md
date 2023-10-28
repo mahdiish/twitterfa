@@ -1,6 +1,7 @@
 ---
 title: "آلوده بودن برخی کتابخانه های پایتون"
 date: "1402-07-14"
+time: "1402-07-14 - 14:40"
 author: "Nima Nikjoo"
 authorId: "@Nima__Nikjoo"
 link: "https://twitter.com/Nima__Nikjoo/status/1709922674242453744"

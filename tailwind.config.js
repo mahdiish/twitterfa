@@ -12,9 +12,8 @@ module.exports = {
         "twitter-blue": "#1D9BF0",
       },
       fontFamily: {
-        yekan: ["yekan"],
-        homa: ["BHoma"],
         vazir: ["Vazir"],
+        estedad: ["Estedad"],
       },
     },
   },

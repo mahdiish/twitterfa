@@ -1,6 +1,7 @@
 ---
 title: "فیگور گرفتن مرال زیبا جلو دوربین"
 date: "1402-07-14"
+time: "1402-07-14 - 13:20"
 author: "فلات ایران"
 authorId: "@IranianPlateau"
 link: "https://twitter.com/IranianPlateau/status/1709962054235283787"

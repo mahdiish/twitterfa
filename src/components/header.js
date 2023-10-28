@@ -59,27 +59,24 @@ export default function Header() {
 
   const inputClassNamesFn = (theme) => {
     if (theme === "initial") {
-      return "border-none focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full bg-white";
+      return "border-none focus:outline-none px-2  text-twitter-blue text-sm w-full bg-white";
     } else if (theme === "light") {
-      return "border-none focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full bg-white";
+      return "border-none focus:outline-none px-2  text-twitter-blue text-sm w-full bg-white";
     } else if (theme === "dark") {
-      return "border-none focus:outline-none px-2 font-vazir text-twitter-blue text-sm w-full bg-black";
+      return "border-none focus:outline-none px-2  text-twitter-blue text-sm w-full bg-black";
     }
   };
 
   //
   const headerLinkClassNames =
-    "no-underline font-bold text-white text-sm md:text-base px-2 py-4 md:py-3 mx-1 font-vazir border-solid border-b-2 border-transparent hover:border-white";
+    "no-underline font-bold text-white text-sm md:text-base px-2 py-4 md:py-3 mx-1  border-solid border-b-2 border-transparent hover:border-white";
 
   const router = useRouter();
 
   return (
-    <div className="sticky top-0 drop-shadow-md">
+    <div className="sticky top-0 drop-shadow-md z-[50]">
       <div className={upperHeaderClassNamesFn(theme)}>
-        <Link
-          className="text-2xl font-bold text-twitter-blue font-vazir"
-          href="/"
-        >
+        <Link className="text-2xl font-bold text-twitter-blue " href="/">
           توییترفا
         </Link>
         <div className="w-7/12 sm:5/12 md:w-4/12">

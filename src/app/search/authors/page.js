@@ -6,7 +6,7 @@ import {
   getTagsWithTerm,
 } from "../../../../lib/posts";
 import { toPersianNumber } from "../../../../lib/digits";
-
+import AuthorTemplate from "@/components/authorTemplate";
 export default async function Home({ searchParams }) {
   const searchTerm = searchParams.q;
   const authorsWithTerm = await getAuthorsWithTerm(
@@ -24,10 +24,8 @@ export default async function Home({ searchParams }) {
   );
   const renderedAuthors = authorsWithTerm.map((author) => {
     return (
-      <Link href={`/authors/${author}`}>
-        <p className="mx-2 px-3 py-1 inline-block font-vazir text-sm text-black font-medium bg-gray-300 rounded-md">
-          {author}
-        </p>
+      <Link key={author} href={`/authors/${author}`}>
+        <AuthorTemplate author={author} />
       </Link>
     );
   });
@@ -62,11 +60,11 @@ export default async function Home({ searchParams }) {
 
   return (
     <Background>
-      <h1 className="text-right font-vazir font-bold pb-3 px-2">
+      <h1 className="text-right font-bold pb-3 px-2">
         نتایج برای {toPersianNumber(searchTerm)}
       </h1>
 
-      <div className="flex font-vazir text-base font-normal mb-4">
+      <div className="flex text-base font-normal mb-4">
         <Link
           href={`/search?q=${searchTerm}`}
           className="flex items-center ml-5"

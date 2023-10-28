@@ -1,6 +1,7 @@
 ---
 title: "از در اومده تو میگه ۲۳۴۵۶"
 date: "1402-06-18"
+time: "1402-06-18 - 11:21"
 author: "AvA"
 authorId: "@far_far_AvvAy"
 link: "https://twitter.com/far_far_AvvAy/status/1679027794192334851"

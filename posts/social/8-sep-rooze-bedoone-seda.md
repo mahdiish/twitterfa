@@ -1,6 +1,7 @@
 ---
 title: "هشتم سپتامبر روز بدون صدا"
 date: "1402-06-18"
+time: "1402-06-18 - 08:38"
 author: "روزها"
 authorId: "@Roozha365"
 link: "https://twitter.com/Roozha365/status/1699995090146459797"

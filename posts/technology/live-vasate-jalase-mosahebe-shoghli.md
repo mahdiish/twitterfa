@@ -1,6 +1,7 @@
 ---
 title: "لایو وسط جلسه مصاحبه شغلی!"
 date: "1402-07-22"
+time: "1402-07-22 - 09:08"
 author: "Shahini"
 authorId: "@shahini_"
 link: "https://twitter.com/shahini_/status/1711124917930934582"

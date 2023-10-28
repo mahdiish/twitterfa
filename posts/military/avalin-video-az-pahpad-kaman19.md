@@ -1,6 +1,7 @@
 ---
 title: "اولین ویدیو از پهپاد کمان 19"
 date: "1402-07-23"
+time: "1402-07-23 - 11:45"
 author: "MESHKAT"
 authorId: "@projectmeshkat"
 link: "https://twitter.com/projectmeshkat/status/1713225083160854578"

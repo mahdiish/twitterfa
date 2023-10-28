@@ -1,6 +1,7 @@
 ---
 title: "قیمت خودروهای چینی با خاک یکسان شد"
 date: "1402-06-17"
+time: "1402-06-17 - 11:10"
 author: "ArashVeisi"
 authorId: "@mmdveisi"
 link: "https://twitter.com/mmdveisi/status/1700061653801259450"

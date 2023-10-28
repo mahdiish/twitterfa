@@ -1,6 +1,7 @@
 ---
 title: "حمایت فرماندار داکوتای جنوبی از دونالد ترامپ"
 date: "1402-06-18"
+time: "1402-06-18 - 09:35"
 author: "امیرعلی ابوالفتح Amir.A Abolfath"
 authorId: "@Abolfath"
 link: "https://twitter.com/Abolfath/status/1700397744395821112"

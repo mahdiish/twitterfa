@@ -1,6 +1,7 @@
 ---
 title: "بهشت گمشده ای به نام روستای اخلمد"
 date: "1402-06-17"
+time: "1402-06-17 - 21:05"
 author: "NIL@@@FAR zahedi"
 authorId: "@nilooofar"
 link: "https://twitter.com/nilooofar/status/1697823268571361517"

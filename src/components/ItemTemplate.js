@@ -19,11 +19,11 @@ export default function ItemTemplate({ content }) {
       className={contentTitleFn(theme)}
     >
       <div className="flex justify-between items-center">
-        <p className="font-vazir text-sm w-8/12 whitespace-nowrap text-ellipsis overflow-hidden">
+        <p className="text-sm w-8/12 whitespace-nowrap text-ellipsis overflow-hidden">
           {toPersianNumber(content.title)}
         </p>
         <div className="flex justify-between items-center w-4/12 mr-2">
-          <p className="font-vazir text-sm whitespace-nowrap text-ellipsis overflow-hidden">
+          <p className="text-sm whitespace-nowrap text-ellipsis overflow-hidden">
             {toPersianNumber(content.author)}
           </p>
           <FaHotjar className="text-twitter-blue text-base mr-1" />

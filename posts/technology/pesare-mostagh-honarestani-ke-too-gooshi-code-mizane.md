@@ -1,6 +1,7 @@
 ---
 title: "پسر مشتاق هنرستانی که تو گوشی کد میزنه"
 date: "1402-07-14"
+time: "1402-07-14 - 17:59"
 author: "Mr.Face"
 authorId: "@mr_face_with_2O"
 link: "https://twitter.com/mr_face_with_2O/status/1709585120649240636"

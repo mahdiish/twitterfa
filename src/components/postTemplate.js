@@ -25,14 +25,14 @@ export default function PostTemplate({
 
   const tagClassNamesFn = (theme) => {
     if (theme === "initial" || theme === "light") {
-      return "mx-2 px-3 py-1 font-vazir text-sm text-black font-medium bg-gray-300 rounded-md";
+      return "mx-2 px-3 py-1  text-sm text-black font-medium bg-gray-300 rounded-md";
     } else if (theme === "dark") {
-      return "mx-2 px-3 py-1 font-vazir text-sm text-white font-medium bg-gray-900 rounded-md";
+      return "mx-2 px-3 py-1  text-sm text-white font-medium bg-gray-900 rounded-md";
     }
   };
   const renderedTags = tags.map((tag) => {
     return (
-      <Link href={`/tags/${tag}`} className={tagClassNamesFn(theme)}>
+      <Link href={`/tags/${tag}`} className={tagClassNamesFn(theme)} key={tag}>
         {toPersianNumber(tag)}
       </Link>
     );
@@ -40,7 +40,7 @@ export default function PostTemplate({
   return (
     <div className="flex text-right flex-col items-center w-full">
       <div className={backgroundClassNamesFn(theme)}>
-        <h1 className="font-vazir pb-2 px-2 font-bold text-base mt-3">
+        <h1 className=" pb-2 px-2 font-bold text-base mt-3">
           {toPersianNumber(title)}
         </h1>
 
@@ -50,20 +50,21 @@ export default function PostTemplate({
               src={`/profiles/${authorId}.jpg`}
               width={45}
               height={45}
+              alt={author}
               className="rounded-full ml-2"
             />
-            <p className="font-vazir text-sm pl-3 whitespace-nowrap text-ellipsis overflow-hidden">
+            <p className=" text-sm pl-3 whitespace-nowrap text-ellipsis overflow-hidden">
               {toPersianNumber(author)}
             </p>
           </Link>
-          <p className=" font-vazir text-sm pl-3">|</p>
-          <p className=" font-vazir text-sm whitespace-nowrap text-ellipsis overflow-hidden">
+          <p className="  text-sm pl-3">|</p>
+          <p className="  text-sm whitespace-nowrap text-ellipsis overflow-hidden">
             {toPersianNumber(date)}
           </p>
         </div>
 
         <ReactMarkdown
-          className="font-vazir text-[15px] text-right"
+          className=" text-[15px] text-right"
           components={{
             img: function ({ ...props }) {
               const srcText = props.src;
@@ -85,7 +86,8 @@ export default function PostTemplate({
               } else if (
                 mediaFormat === ".jpg" ||
                 mediaFormat === ".webp" ||
-                mediaFormat === ".png"
+                mediaFormat === ".png" ||
+                mediaFormat === ".jfif"
               ) {
                 const substrings = props.alt?.split("{{");
                 const alt = substrings[0].trim();

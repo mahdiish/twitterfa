@@ -9,14 +9,10 @@
 }
 
 @font-face {
-  font-family: "yekan";
-  src: url("../../public/assets/fonts/Yekan.ttf");
-}
-@font-face {
-  font-family: "BHoma";
-  src: url("../../public/assets/fonts/BHoma_0.ttf");
-}
-@font-face {
   font-family: "Vazir";
   src: url("../../public/assets/fonts/Vazir.ttf");
+}
+@font-face {
+  font-family: "Estedad";
+  src: url("../../public/assets/fonts/Estedad[KSHD,wght].woff2");
 }

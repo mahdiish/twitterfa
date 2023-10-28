@@ -1,6 +1,7 @@
 ---
 title: "آماده سازی تایوان برای جنگ با چین"
 date: "1402-06-18"
+time: "1402-06-18 - 18:10"
 author: "VIP"
 authorId: "@iran_vip_fact"
 link: "https://twitter.com/iran_vip_fact/status/1698976704201449502"

@@ -1,6 +1,7 @@
 ---
 title: "یه ابزار هوش مصنوعی عالی برای بازسازی عکس‌هایی با کیفیت پایین"
 date: "1402-06-17"
+time: "1402-06-17 - 09:55"
 author: "Mo Valipour"
 authorId: "@mvalipour"
 link: "https://twitter.com/mvalipour/status/1612579817815261184"

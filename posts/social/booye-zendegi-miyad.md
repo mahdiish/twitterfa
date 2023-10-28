@@ -1,6 +1,7 @@
 ---
 title: "بوی زندگی میاد😍"
 date: "1402-07-22"
+time: "1402-07-22 - 17:10"
 author: "mahtab"
 authorId: "@mahtab_a76"
 link: "https://twitter.com/mahtab_a76/status/1712006369191104880"

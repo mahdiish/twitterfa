@@ -1,6 +1,7 @@
 ---
 title: "حضور مقامات ژاپنی در عرشه ناو جنگی آمریکا برای مذاکرات تسلیم ژاپن سال 1945"
 date: "1402-06-18"
+time: "1402-06-18 - 17:58"
 author: "historyy"
 authorId: "@history44441"
 link: "https://twitter.com/history44441/status/1699331660582354993"

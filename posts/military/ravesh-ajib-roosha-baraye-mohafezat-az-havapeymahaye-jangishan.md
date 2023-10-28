@@ -1,6 +1,7 @@
 ---
 title: "روش عجیب روسها برای محافظت از هواپیماهای جنگی شان"
 date: "1402-06-18"
+time: "1402-06-18 - 09:28"
 author: "Sina Noorikhani"
 authorId: "@SinaNoorikhani"
 link: "https://twitter.com/SinaNoorikhani/status/1698311702679285967"

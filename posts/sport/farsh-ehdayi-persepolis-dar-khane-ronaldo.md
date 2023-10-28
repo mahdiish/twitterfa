@@ -1,6 +1,7 @@
 ---
 title: "فرش اهدایی پرسپولیس در خانه‌ رونالدو"
 date: "1402-07-14"
+time: "1402-07-14 - 11:35"
 author: "شرق"
 authorId: "@SharghDaily"
 link: "https://twitter.com/SharghDaily/status/1709581801201570240"

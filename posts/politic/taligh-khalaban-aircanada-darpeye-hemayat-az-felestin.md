@@ -1,6 +1,7 @@
 ---
 title: "تعلیق خلبان ایرکانادا در پی حمایت از فلسطین"
 date: "1402-07-22"
+time: "1402-07-22 - 17:45"
 author: "Musa"
 authorId: "@J74wb"
 link: "https://twitter.com/J74wb/status/1712151481221263560"

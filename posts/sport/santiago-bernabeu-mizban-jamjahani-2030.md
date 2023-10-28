@@ -1,6 +1,7 @@
 ---
 title: "سانتیاگو برنابئو میزبان جام جهانی 2030"
 date: "1402-07-14"
+time: "1402-07-14 - 19:01"
 author: "العربیه فارسی"
 authorId: "@AlArabiya_Fa"
 link: "https://twitter.com/AlArabiya_Fa/status/1709662676219998361"

@@ -1,6 +1,7 @@
 ---
 title: "تماس تلفنی رئیسی و پاشینیان"
 date: "1402-06-18"
+time: "1402-06-18 - 14:05"
 author: "خبرگزاری تسنیم 🇮🇷"
 authorId: "@Tasnimnews_Fa"
 link: "https://twitter.com/Tasnimnews_Fa/status/1700468400818909363"

@@ -3,10 +3,8 @@ import Background from "@/components/background";
 export default function AboutPage() {
   return (
     <Background>
-      <h1 className="text-right font-vazir pb-2 px-2 font-vazir text-base">
-        درباره ما
-      </h1>
-      <p className="text-right font-vazir text-base">
+      <h1 className="text-right pb-2 px-2 text-base">درباره ما</h1>
+      <p className="text-right text-base">
         سایت توییترفا در تلاش است که جذاب ترین و مفید ترین توییت های فارسی را
         برای شما گردآوری کند.
         <br />

@@ -5,8 +5,8 @@ import Background from "@/components/background";
 export default function Home() {
   const renderedTopics = topicData.map((topic) => {
     return (
-      <div>
-        <TopicTemplate key={topic.title} topic={topic} />
+      <div key={topic.title}>
+        <TopicTemplate topic={topic} />
       </div>
     );
   });

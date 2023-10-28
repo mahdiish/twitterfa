@@ -1,6 +1,7 @@
 ---
 title: "بحران برنج در فیلیپین زنگ خطر تورم جهانی را به صدا درآورد"
 date: "1402-06-18"
+time: "1402-06-18 - 18:56"
 author: "وبانگاه | هاب خبری"
 authorId: "@webangah_farsi"
 link: "https://twitter.com/webangah_farsi/status/1700401915371069729"

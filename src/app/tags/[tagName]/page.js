@@ -49,7 +49,7 @@ export default async function Post({ params }) {
 
   return (
     <Background>
-      <h1 className="text-right font-vazir pb-3 px-2">
+      <h1 className="text-right pb-3 px-2">
         مطالب حاوی تگ {toPersianNumber(tagName)}
       </h1>
       <div>{renderedContents}</div>

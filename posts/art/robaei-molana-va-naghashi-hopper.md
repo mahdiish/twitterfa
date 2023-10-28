@@ -1,6 +1,7 @@
 ---
 title: "رباعی مولانا و نقاشی ادوارد هاپر"
 date: "1402-06-16"
+time: "1402-06-16 - 12:15"
 author: "Mehran"
 authorId: "@MMehran"
 link: "https://twitter.com/MMehran/status/1698735127294312455"

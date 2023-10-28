@@ -1,6 +1,7 @@
 ---
 title: "اینفوگرافی 120 ابزار هوش مصنوعی در مارکتینگ"
 date: "1402-06-17"
+time: "1402-06-17 - 14:04"
 author: "DM board | دی ام برد، رسانه بازاریابی"
 authorId: "@DMboardMedia"
 link: "https://twitter.com/DMboardMedia/status/1691098306657824768"

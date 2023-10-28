@@ -1,6 +1,7 @@
 ---
 title: "واکنش فمینیستها به حقوق برابر در قبال مسئولیت برابر"
 date: "1402-06-18"
+time: "1402-06-18 - 14:04"
 author: "Night lantern"
 authorId: "@Noousernam"
 link: "https://twitter.com/Noousernam/status/1700399087445594479"

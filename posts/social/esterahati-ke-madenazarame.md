@@ -1,6 +1,7 @@
 ---
 title: "استراحتی که مدنظرمه 😸"
 date: "1402-07-22"
+time: "1402-07-22 - 22:09"
 author: "سگ و گربه"
 authorId: "@sagogorbe"
 link: "https://twitter.com/sagogorbe/status/1712022732236300605"
