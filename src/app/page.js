@@ -1,4 +1,4 @@
-import TopicTemplate from "@/components/TopicTemplate";
+import TopicTemplate from "@/components/topicTemplate";
 import { topicData } from "@/data/topicData";
 import Background from "@/components/background";
 
