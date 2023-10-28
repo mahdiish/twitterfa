@@ -49,7 +49,9 @@ export default async function Post({ params }) {
   };
   const allPostsData = await getPostsData(`posts/${topic}`);
   const renderedTopic = (
-    <h1 className="text-right pb-2 px-2">{pathEquals[`posts/${topic}`]}</h1>
+    <h1 className="text-right pb-2 px-2 font-medium">
+      {pathEquals[`posts/${topic}`]}
+    </h1>
   );
   const renderedContents = allPostsData.map((content) => {
     return <ItemTemplate content={content} key={content.id} />;

@@ -40,15 +40,9 @@ export default function TopicTemplate({ topic }) {
       </Link>
     );
   });
-  const topicTitleFn = (theme) => {
-    if (theme === "initial" || theme === "light") {
-      return "text-right p-1 text-black";
-    } else if (theme === "dark") {
-      return "text-right p-1 text-white";
-    }
-  };
+
   const renderedTitle = (
-    <h1 className={topicTitleFn(theme)}>
+    <h1 className="text-right p-1 font-medium">
       <Link href={topic.href}>{toPersianNumber(topic.title)}</Link>
     </h1>
   );

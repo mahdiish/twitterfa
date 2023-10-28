@@ -8,9 +8,9 @@ export default function ItemTemplate({ content }) {
   const theme = useStore((state) => state.theme);
   const contentTitleFn = (theme) => {
     if (theme === "initial" || theme === "light") {
-      return "block text-right py-1 px-6 even:bg-gray-100 border-solid border-r-2 even:border-twitter-blue odd:border-gray-100";
+      return "block text-right py-1 px-3 sm:px-6 even:bg-gray-100 border-solid border-r-2 even:border-twitter-blue odd:border-gray-100";
     } else if (theme === "dark") {
-      return "block text-right py-1 px-6 even:bg-gray-500 border-solid border-r-2 even:border-twitter-blue odd:border-gray-500";
+      return "block text-right py-1 px-3 sm:px-6 even:bg-gray-500 border-solid border-r-2 even:border-twitter-blue odd:border-gray-500";
     }
   };
   return (

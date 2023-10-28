@@ -16,12 +16,6 @@ export default function Footer() {
         >
           ارتباط با ما
         </Link>
-        <Link
-          href="/advertisement"
-          className="text-white text-base no-underline font-medium"
-        >
-          تبلیغات
-        </Link>
       </div>
       <div className="bg-twitter-blue text-white text-base flex justify-around items-center px-4 h-10">
         مطالب جذاب و برگزیده توییتر فارسی
